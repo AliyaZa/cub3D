@@ -6,7 +6,7 @@
 /*   By: nhill <nhill@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 19:21:38 by nhill             #+#    #+#             */
-/*   Updated: 2021/03/13 18:58:06 by nhill            ###   ########.fr       */
+/*   Updated: 2021/03/16 17:57:16 by nhill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int		check_text(char *s)
 		i++;
 	while (s[i] != '.')
 	{
-		if (ft_isascii(s[i]) && s[i] != ' ')
+		if (ft_isascii(s[i]) && s[i] != ' ' && s[i] != '\t')
 			return (WRONG_INPUT);
 		i++;
 	}
